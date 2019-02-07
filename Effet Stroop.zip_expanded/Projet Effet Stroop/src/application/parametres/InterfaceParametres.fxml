@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.parametres.ParametresController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Paramètres">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <effect>
+                  <Bloom threshold="0.5" />
+               </effect>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ici vous pourrez modifier les paramètres de l'application. " />
+            <Text fill="WHITE" layoutX="162.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliquez sur &quot;Valider&quot; pour enregistrer les changements." />
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="8.0" top="8.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Disposition des Items en largeur ">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="choixDimLargeur" prefWidth="150.0" style="-fx-background-color: black; -fx-border-color: white;">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="334.0" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Disposition des Items en hauteur">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="choixDimHauteur" prefWidth="150.0" style="-fx-background-color: black; -fx-border-color: white;">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="8.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox layoutX="10.0" layoutY="384.0" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Police à utiliser pour le jeu">
+                     <HBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="choixPolice" prefWidth="150.0" style="-fx-background-color: black; -fx-border-color: white;">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox layoutX="10.0" layoutY="259.0" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pourcentage de texte &quot;intrus&quot;">
+                     <HBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="choixPourcentage" prefWidth="150.0" style="-fx-background-color: black; -fx-border-color: white;">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ici vous pourrez ajouter de nouvelles couleurs au jeu." />
+            <Text fill="WHITE" layoutX="270.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pour ce faire entrez le nom de cette couleur dans le champ &quot;Ajouter une couleur'" />
+            <Text fill="WHITE" layoutX="196.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="puis choisissez à quoi elle ressemblera avec &quot;Attribuer une couleur&quot;">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+            <VBox>
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter une couleur">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="nomCouleur" prefWidth="250.0" promptText="Saisir le nom de la couleur" style="-fx-background-color: grey;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Attribuer une couleur">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <ColorPicker fx:id="choixCouleur" style="-fx-background-color: black; -fx-border-color: white;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ColorPicker>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="ajouterElement" mnemonicParsing="false" onAction="#clicAjouterElement" style="-fx-background-color: black; -fx-border-color: white; -fx-text-fill: white;" text="Ajouter l'élément">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="8.0" />
+               </VBox.margin>
+            </Separator>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Séléctionnez une couleur dans la liste puis cliquez sur &quot;Supprimer&quot; pour la supprimer." />
+            <Text fill="WHITE" layoutX="184.0" layoutY="595.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vos changements seront enregistrés une fois que vous cliquerez sur &quot;Validez&quot;" />
+            <ListView fx:id="listeCouleur" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: grey;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="250.0" right="250.0" top="15.0" />
+               </VBox.margin>
+            </ListView>
+            <Button fx:id="supprimer" mnemonicParsing="false" onAction="#clicSupprimer" style="-fx-background-color: black; -fx-border-color: white; -fx-text-fill: white;" text="Supprimer">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="8.0" top="8.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox alignment="CENTER" spacing="15.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="valider" mnemonicParsing="false" onAction="#clicValider" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: black; -fx-border-color: white;" text="Valider" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="retour" layoutX="335.0" layoutY="11.0" mnemonicParsing="false" onAction="#retourAccueil" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: black; -fx-border-color: white;" text="Annuler" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
